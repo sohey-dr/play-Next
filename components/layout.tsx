@@ -15,25 +15,26 @@ export default function Layout({ children, title, description }: Props) {
         <title>{pageTitle}</title>
         <meta name="description" content={description || "ホームページ概要"} />
       </Head>
-      <header>
-        <h1>{pageTitle}</h1>
-      </header>
-      <nav>
-        <ul>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-        </ul>
-      </nav>
 
-      <main>
-        {children}
-      </main>
+      <div className="container mx-auto">
+        <header>
+          <h1 className="text-xl font-bold">{pageTitle}</h1>
+        </header>
+        <nav>
+          <ul>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/about">About</Link>
+            </li>
+          </ul>
+        </nav>
 
-      <footer>&copy; Next.js Demo</footer>
+        <main>{children}</main>
+
+        <footer>&copy; Next.js Demo</footer>
+      </div>
     </div>
   );
 }
