@@ -28,7 +28,11 @@ export default function Layout({ children, title, description }: Props) {
           </li>
         </ul>
       </nav>
-      <main>{children}</main>
+
+      <main>
+        {children}
+      </main>
+
       <footer>&copy; Next.js Demo</footer>
     </div>
   );

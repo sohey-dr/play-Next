@@ -1,13 +1,11 @@
-import Head from "next/head";
+import Layout from "../components/layout";
+import styles from "../styles/Home.module.css";
 
-export default function About() {
+export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>自己紹介タイトル</title>
-        <meta name="description" content="自己紹介概要" />
-      </Head>
-      <h1>自己紹介タイトル</h1>
-    </div>
+    <Layout title="自己紹介" description="自己紹介ページ">
+      <p className={styles.colorRed}>こんにちは</p>
+      <p>sa</p>
+    </Layout>
   );
 }
