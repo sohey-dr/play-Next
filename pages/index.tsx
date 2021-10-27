@@ -1,13 +1,24 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div>
+    <div className="wrap">
       <Head>
-        <title>こんにちは</title>
-        <meta name="description" content="ホームページ概要" />
+        <title>Next.js使ってみた</title>
+        <meta name="description" content="Next.jsのテストです。" />
       </Head>
-      <h1>初めてのNext.jsやで</h1>
+      <nav>
+        <ul>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+        </ul>
+      </nav>
+      <h1>Next.js使ってみた</h1>
     </div>
   );
 }
