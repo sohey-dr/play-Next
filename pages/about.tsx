@@ -6,10 +6,17 @@ type Props = {
 };
 
 const Home = ({ updated }: Props) => {
+  function clickHandler(): void {
+      console.log("Clicked");
+    }
+
   return (
     <Layout title="自己紹介" description="自己紹介ページ">
       <p>こんにちは</p>
       <p>sa</p>
+      <button onClick={clickHandler}>
+        こんにちは
+      </button>
       {updated}
     </Layout>
   );
