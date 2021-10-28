@@ -15,6 +15,7 @@ export default function Home() {
   return (
     <Layout title="ホームページタイトル" description="ホームページ概要">
       <p>ホームページコンテンツ</p>
+      <p>読み込んでからかかった時間: { time }秒</p>
     </Layout>
   );
 }
