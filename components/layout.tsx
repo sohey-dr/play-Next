@@ -28,6 +28,9 @@ export default function Layout({ children, title, description }: Props) {
             <li>
               <Link href="/about">About</Link>
             </li>
+            <li>
+              <Link href="/todos">Todo</Link>
+            </li>
           </ul>
         </nav>
 
