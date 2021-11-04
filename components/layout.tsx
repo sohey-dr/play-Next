@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "./Header";
+import Footer from "./Footer";
 
 type Props = {
   children?: React.ReactNode;
@@ -21,7 +22,7 @@ export default function Layout({ children, title, description }: Props) {
 
         <main>{children}</main>
 
-        <footer>&copy; Next.js Demo</footer>
+        <Footer />
       </div>
     </div>
   );
