@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
+import Header from "./Header";
 
 type Props = {
   children?: React.ReactNode;
@@ -17,22 +17,7 @@ export default function Layout({ children, title, description }: Props) {
       </Head>
 
       <div className="container mx-auto">
-        <header>
-          <h1 className="text-xl font-bold">{pageTitle}</h1>
-        </header>
-        <nav>
-          <ul>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/about">About</Link>
-            </li>
-            <li>
-              <Link href="/todos">Todo</Link>
-            </li>
-          </ul>
-        </nav>
+        <Header />
 
         <main>{children}</main>
 
